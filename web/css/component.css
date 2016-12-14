@@ -1,0 +1,250 @@
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.cbp-hrmenu {
+	width: 100%;
+
+	
+	
+}
+
+/* general ul style */
+.cbp-hrmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* first level ul style */
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+	width: 90%;
+	max-width: 70em;
+	margin: 0 auto;
+	color:#000;
+	
+}
+
+.cbp-hrmenu > ul > li {
+	display: inline-block;
+}
+
+.cbp-hrmenu > ul > li > a {
+	font-weight: normal;
+	padding: 1em 2em;
+	color: #777;
+	display: inline-block;
+	text-align:center;
+}
+
+.cbp-hrmenu > ul > li > a:hover {
+	color: #9f8462;
+	-webkit-transition:color 0.5s ease-in;
+	background:url(../img/menu_bg_hover.png) no-repeat;
+	background-position: center 90%;
+	
+	
+	
+}
+
+li.cbp-hropen a,
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+	color: #9f8462;
+	-webkit-transition:color 0.5s ease-in;
+	background:url(../img/menu_bg_hover.png) no-repeat;
+	background-position: center 90%;
+	
+}
+
+/* sub-menu */
+
+.cbp-hrmenu .cbp-hrsub {
+	display: none;
+	position: absolute;
+	width: 100%;
+	min-height:100px;
+	left: 0;
+    background:url(../img/menu_bg_opacity.png) repeat-x ;
+	background-position: top;
+	
+	
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+	padding-bottom: 3em;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+	width: 15%;
+	margin: 0 auto;
+	float: left;
+	position:relative;
+	
+	
+	
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+	background:none;
+	
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	clear: both;
+	background:none;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+	line-height: 2em;
+	color:#777;
+	background:none;
+	
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a:hover {
+	line-height: 2em;
+	color:#000;
+	background:none;
+	
+}
+#mainTxt {
+	position:relative; 
+	margin-top:5%; 
+	margin-left:auto; 
+	margin-right:auto; 
+	float:left; 
+	margin-bottom:5%; 
+	max-width:980px;
+}
+.mainTxt_inside {
+    position:relative;
+	float:left;
+	width:70%;
+	padding-left:5%; 
+	
+}
+.mainTxt_title {
+	position:relative; 
+	float:left; 
+	width:25%; 
+	padding-right:5%; 
+	padding-left:5%; 
+	font-size:24px;
+	border-right:#9f8462 1px solid; 
+}
+
+
+/* Examples for media queries */
+
+@media screen and (max-width: 65em) { 
+
+	.cbp-hrmenu {
+		font-size: 90%;
+	}
+	#mainTxt {
+		width:60%;
+	}
+	#SildeContainer {
+		width:90%;
+	}
+	.mainTxt_inside {
+    position:relative;
+	width:60%;
+	margin:auto;
+	border:none;
+	margin-top:5%;
+	text-align:center;
+	padding:auto;
+	
+    }
+	.mainTxt_title {
+	padding:0;
+	position:relative; 
+	text-align:center;
+	width:70%; 
+    margin: auto;
+	font-size:150%;
+	border-bottom:#9f8462 1px solid; 
+	border-right:none;
+	
+    }
+
+
+
+}
+
+@media screen and (max-width: 43em) { 
+#GoldPrice { display:none;}
+	.cbp-hrmenu {
+		font-size: 120%;
+		border: none;
+	}
+
+	.cbp-hrmenu > ul,
+	.cbp-hrmenu .cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrmenu .cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.cbp-hrmenu > ul > li {
+		display: block;
+		border-bottom: 4px solid #9f8462;
+	}
+
+	.cbp-hrmenu > ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrmenu .cbp-hrsub { 
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+	#mainTxt {
+		width:70%;
+	}
+	#SildeContainer {
+		width:90%;
+	}
+}
+
+@media screen and (max-width: 36em) { 
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0;
+		text-align:center;
+	
+
+	}
+	#mainTxt {
+		width:70%;
+	}
+	#SildeContainer {
+		width:90%;
+	}
+}
+
+
+

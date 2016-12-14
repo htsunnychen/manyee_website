@@ -1,0 +1,63 @@
+#SildeContainer {
+	margin: 0 auto;
+	position:relative;
+	max-width:900px;
+	z-index:10;
+	margin-top: 50px;
+	display: block;
+	overflow: hidden;
+	height:400px;
+	}
+
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; margin:auto; position:relative;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {  position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+
+.flex-caption {background:none; text-align:left; zoom: 1; width:180px; height:150px; padding: 2%; position: absolute; left:80px; bottom:50px; color:#777; font-size: 13px; line-height: 20px; text-align:center;}
+.flex-caption h1{font-size: 30px; padding-bottom:20px;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width: 32px; height: 100px; margin:20px; display: block; background:url(../images/bg_direction_nav.png) no-repeat; position: absolute; bottom:0; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li .next {background-position: -32px 0; right: 0; top: 115px; }
+.flex-direction-nav li .prev {background-position: 0 0; left: 0; top: 115px;}
+.flex-direction-nav li a:hover {opacity: 0.5; filter:alpha(opacity=50); cursor: pointer; }
+
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 10px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 18px; height: 18px; display: block; background:url(../images/bg_control_nav.png) no-repeat; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -18px;}
+.flex-control-nav li a.active {background-position: 0 -36px; cursor: default;}
