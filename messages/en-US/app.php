@@ -22,4 +22,6 @@ return [
     'Contact Us' => '',
     'Privacy Statement' => '',
     'Site Map' => '',
+    'Introduction' => 'Here is introduction',
+    'Address' => 'Central',
 ];

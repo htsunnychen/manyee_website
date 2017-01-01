@@ -22,4 +22,6 @@ return [
 	'Contact Us' => '联络我们',
 	'Privacy Statement' => '私隐声明',
 	'Site Map' => '网站地图',
+	'Introduction' => '这里是介绍文。',
+    'Address' => '上环德辅道中',
 ];

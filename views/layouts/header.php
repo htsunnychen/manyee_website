@@ -27,7 +27,7 @@ $productMenus = GlobalFunction::getProductMenus();
 <div style="width:100%; height:166px; background:url(<?=$homeUrl ?>img/topbanner.jpg) repeat-x;">
 	<div style="width:100%; height:166px; background:url(<?=$homeUrl ?>img/topbanner.jpg) repeat-x;">
 		<div id="TopLayer"><a href="<?=$homeUrl ?>"><img src="<?=$homeUrl ?>img/logo.png" width="169" height="98" border="0" /></a></div>
-		<div id="GoldPrice" style="width:155px; height:64px;"><div style="width:150px; height:30px; position:absolute; bottom:8px; color:#ffec8b; text-align:center;">買入： 11500港幣/兩<br />賣出： 13500港幣/兩</div></div>
+		<!--div id="GoldPrice" style="width:155px; height:64px;"><div style="width:150px; height:30px; position:absolute; bottom:8px; color:#ffec8b; text-align:center;">買入： 11500港幣/兩<br />賣出： 13500港幣/兩</div></div-->
 	</div>
 </div>
 
@@ -55,7 +55,7 @@ $productMenus = GlobalFunction::getProductMenus();
 					</li>
 				<? } ?>
 
-				<li class="grid"><? echo Html::a(Yii::t('app', 'Contact Us'), "@web/product/list/1", ['class'=>'color1']); ?></li>
+				<li class="grid"><? echo Html::a(Yii::t('app', 'Contact Us'), "@web/contact", ['class'=>'color1']); ?></li>
 			</ul>
 		</div>
 	</div>

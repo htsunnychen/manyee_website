@@ -22,4 +22,6 @@ return [
     'Contact Us' => '聯絡我們',
     'Privacy Statement' => '私隱聲明',
     'Site Map' => '網站地圖',
+    'Introduction' => '這裏是介紹文。',
+    'Address' => '上環德輔道中',
 ];
