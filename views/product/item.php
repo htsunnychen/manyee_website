@@ -5,7 +5,10 @@ $img_path = Yii::$app->params['product_image_path'];
 
 <!--flex slider-->
 <script defer src="<?=$homeUrl ?>js/jquery.flexslider-min.js"></script>
+<script src ="<?=$homeUrl ?>js/magnific.js"></script>
+
 <link rel="stylesheet" href="<?=$homeUrl ?>css/flexslider-item.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?=$homeUrl ?>css/magnific.css" type="text/css" media="screen" />
 
 <div class="single">
    <div class="container">
@@ -16,7 +19,12 @@ $img_path = Yii::$app->params['product_image_path'];
 				  <ul class="slides">
 				  	<? for ($i = 1; $i <= $product->sub_img_count; $i++) { ?>
 					    <li data-thumb="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'_s'.$i.'.jpg' ?>">
-					        <div class="thumb-image"> <img src="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'_b'.$i.'.jpg' ?>" data-imagezoom="true" class="img-responsive"> </div>
+					        <div class="thumb-image">
+					        	<a class="image-popup" href="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'_b'.$i.'.jpg' ?>">
+					        		<img src="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'_s'.$i.'.jpg' ?>" data-imagezoom="true" class="img-responsive">
+					        	</a>
+					        	
+				        	</div>
 					    </li>
 				    <? } ?>
 
@@ -60,5 +68,14 @@ $(window).load(function() {
     animation: "slide",
     controlNav: "thumbnails"
   });
+
+	$('.image-popup').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+	});
 });
 </script>
