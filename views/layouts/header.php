@@ -38,20 +38,25 @@ $productMenus = GlobalFunction::getProductMenus();
 			 <ul class="megamenu skyblue">
 				
 				<? foreach ($productMenus as $menu) { ?>
-					<li class="grid"><a class="color1" href="#"><? echo $menu->name; ?></a>
-						<div class="megapanel">
-							<div class="row">
-								<div class="col1">
-									<div class="h_nav">
-										<ul>
-											<? foreach ($menu->subMenus as $subMenu) { ?>
-												<li><? echo Html::a($subMenu->name, "@web/product/list/1"); ?></li>
-											<? } ?>
-										</ul>	
+					<li class="grid">
+						<? if (sizeOf($menu->subMenus) == 0) {
+							echo Html::a($menu->name, "@web/product/list/1");
+						} else { ?>
+							<a class="color1" href="#"><? echo $menu->name; ?></a>
+							<div class="megapanel">
+								<div class="row">
+									<div class="col1">
+										<div class="h_nav">
+											<ul>
+												<? foreach ($menu->subMenus as $subMenu) { ?>
+													<li><? echo Html::a($subMenu->name, "@web/product/list/1"); ?></li>
+												<? } ?>
+											</ul>	
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						<? } ?>
 					</li>
 				<? } ?>
 
