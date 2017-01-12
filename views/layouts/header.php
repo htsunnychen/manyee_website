@@ -40,7 +40,7 @@ $productMenus = GlobalFunction::getProductMenus();
 				<? foreach ($productMenus as $menu) { ?>
 					<li class="grid">
 						<? if (sizeOf($menu->subMenus) == 0) {
-							echo Html::a($menu->name, "@web/product/list/1");
+							echo Html::a($menu->name, "@web/product/list/".$menu->id);
 						} else { ?>
 							<a class="color1" href="#"><? echo $menu->name; ?></a>
 							<div class="megapanel">
@@ -49,7 +49,7 @@ $productMenus = GlobalFunction::getProductMenus();
 										<div class="h_nav">
 											<ul>
 												<? foreach ($menu->subMenus as $subMenu) { ?>
-													<li><? echo Html::a($subMenu->name, "@web/product/list/1"); ?></li>
+													<li><? echo Html::a($subMenu->name, "@web/product/list/".$subMenu->id); ?></li>
 												<? } ?>
 											</ul>	
 										</div>
