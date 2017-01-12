@@ -10,6 +10,12 @@ $img_path = Yii::$app->params['product_image_path'];
 <link rel="stylesheet" href="<?=$homeUrl ?>css/flexslider-item.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="<?=$homeUrl ?>css/magnific.css" type="text/css" media="screen" />
 
+<style type="text/css">
+	.flex-viewport {
+	  max-height:500px;
+	}
+</style>
+
 <div class="single">
    <div class="container">
    	 <div class="single-main">
