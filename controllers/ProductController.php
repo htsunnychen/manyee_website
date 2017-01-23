@@ -32,6 +32,7 @@ class ProductController extends Controller
 
 		// Get first 3 products as suggested product
 		$suggest_products = Product::find()->where(['category_id' => $product->category_id])
+									->andWhere(['<>', 'id', $product_id])
 									->orderBy('prod_cd')
 									->limit(3) //TODO configurable
 									->all();

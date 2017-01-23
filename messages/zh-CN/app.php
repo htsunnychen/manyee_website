@@ -17,6 +17,9 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+	'Product Code' => '产品型号',
+	'Product Information' => '产品资讯',
+	
 	'About Us' => '关于我们',
 	'About Us Description' => '始创于1995年的万宜珠宝是​​一家香港老字号，多年来以客为本，以客为尊，提供各类千足金饰品、钻石K金饰品及进口天然翡翠饰品。始创于1995年的万宜珠宝是​​一家香港老字号，多年来以客为本，以客为尊，提供各类千足金饰品、钻石K金饰品及进口天然翡翠饰品。',
 	'Contact Us' => '联络我们',

@@ -38,9 +38,9 @@ $img_path = Yii::$app->params['product_image_path'];
 				</div>
 			</div>
 			<div class="col-md-7 single-top-left simpleCart_shelfItem">
-				<h2>產品型號：<?=$product->prod_cd ?></h2>
-				<h1>鑽石資訊：<?=$product->name ?></h1>
-				<h3></h3>		
+				<h2><? echo Yii::t('app', 'Product Code'); ?>：<?=$product->prod_cd ?></h2>
+				<h1><? echo Yii::t('app', 'Product Information'); ?>：<?=$product->name ?></h1>
+				<h3></h3>
 				<p stlye="mainTxt_inside"><?=$product->description ?></p>
 				
 			</div>
@@ -52,7 +52,7 @@ $img_path = Yii::$app->params['product_image_path'];
 	   			<div class="col-md-3 home-grid">
 					<div class="home-product-main">
 					   <div class="home-product-top">
-					      <a href="#"><img src="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'.jpg' ?>" alt="" class="img-responsive zoom-img"></a>
+					      <a href="<?=$homeUrl ?>product/item/<?=$product->id ?>"><img src="<?=$homeUrl.$img_path.'/'.$product->prod_cd.'.jpg' ?>" alt="" class="img-responsive zoom-img"></a>
 					   </div>
 					   <div class="home-product-bottom">
 								<h3><a href="single"><?=$product->prod_cd ?></a></h3>

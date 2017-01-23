@@ -17,7 +17,10 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-	'About Us' => '',
+	'Product Code' => 'Product Code',
+	'Product Information' => 'Product Information',
+
+	'About Us' => 'About Us',
 	'About Us Description' => 'To be translated',
     'Contact Us' => '',
     'Privacy Statement' => '',

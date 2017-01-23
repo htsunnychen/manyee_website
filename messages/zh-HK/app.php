@@ -17,8 +17,11 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+	'Product Code' => '產品型號',
+	'Product Information' => '產品資訊',
+
 	'About Us' => '關於我們',
-	'About Us Description' => '始創于1995年的萬宜珠寶是一家香港老字號，多年來以客為本，以客為尊，提供各類千足金飾品、鑽石K金飾品及進口天然翡翠飾品。始創于1995年的萬宜珠寶是一家香港老字號，多年來以客為本，以客為尊，提供各類千足金飾品、鑽石K金飾品及進口天然翡翠飾品。',
+	'About Us Description' => '始創於1995年，多年來萬宜珠寶一直力臻完美，其精湛的工藝，非凡的設計，上乘的黃金珠寶及專業真誠的服務，受到顧客的青睞。',
     'Contact Us' => '聯絡我們',
     'Privacy Statement' => '私隱聲明',
     'Site Map' => '網站地圖',

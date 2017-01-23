@@ -5,12 +5,11 @@ use yii\helpers\Url; ?>
 	<div id="BottomLayer">
 		<? echo Html::a(Yii::t('app', 'Site Map'), "#"); ?> |
 		<? echo Html::a(Yii::t('app', 'Privacy Statement'), "#"); ?> |
-		<? echo Html::a(Yii::t('app', 'Contact Us'), "#"); ?>
+		<? echo Html::a(Yii::t('app', 'Contact Us'), "@web/contact"); ?>
 		<br />
 		<br />
 		
 		<div>
-			<? echo Html::a('EN', [Yii::$app->request->pathInfo, 'language'=>'en-US']); ?> |
 			<? echo Html::a('繁', [Yii::$app->request->pathInfo, 'language'=>'zh-HK']); ?> |
 			<? echo Html::a('簡', [Yii::$app->request->pathInfo, 'language'=>'zh-CN']); ?>
 		</div>

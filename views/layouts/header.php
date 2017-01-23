@@ -2,33 +2,35 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use app\models\GlobalFunction;
+use app\assets\AppAsset;
+use yii\web\Session;
 
-/*AppAsset::register($this);
+//AppAsset::register($this);
 
-$session=new Session;
+//$session=new Session;
+$session = Yii::$app->session;
 $session->open();
-$productMenus = $session['PRODUCT_MENU'];
+
+$sessionCode = 'PRODUCT_MENU_'.Yii::$app->session['_language']; // From yii2-localeurls
+
+$productMenus = $session[$sessionCode];
 
 if ($productMenus == NULL) {
 	$productMenus = GlobalFunction::getProductMenus();
-	$session['PRODUCT_MENU'] = $productMenus;
+	$session[$sessionCode] = $productMenus;
 }
 
-$session->close(); */
+$session->close();
 
 //$productMenus = GlobalFunction::getProductMenus();
-
-$productMenus = GlobalFunction::getProductMenus();
 
 ?>
 
 <link rel="stylesheet" type="text/css" href="<?=$homeUrl ?>css/megamenu.css" />
 
 <div style="width:100%; height:166px; background:url(<?=$homeUrl ?>img/topbanner.jpg) repeat-x;">
-	<div style="width:100%; height:166px; background:url(<?=$homeUrl ?>img/topbanner.jpg) repeat-x;">
-		<div id="TopLayer"><a href="<?=$homeUrl ?>"><img src="<?=$homeUrl ?>img/logo.png" width="169" height="98" border="0" /></a></div>
-		<!--div id="GoldPrice" style="width:155px; height:64px;"><div style="width:150px; height:30px; position:absolute; bottom:8px; color:#ffec8b; text-align:center;">買入： 11500港幣/兩<br />賣出： 13500港幣/兩</div></div-->
-	</div>
+	<div id="TopLayer"><a href="<?=$homeUrl ?>"><img src="<?=$homeUrl ?>img/logo.png" width="169" height="98" border="0" /></a></div>
+	<!--div id="GoldPrice" style="width:155px; height:64px;"><div style="width:150px; height:30px; position:absolute; bottom:8px; color:#ffec8b; text-align:center;">買入： 11500港幣/兩<br />賣出： 13500港幣/兩</div></div-->
 </div>
 
 <div class="mega_nav">
