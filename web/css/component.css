@@ -155,14 +155,14 @@ li.cbp-hropen a,
 		font-size: 90%;
 	}
 	#mainTxt {
-		width:60%;
+		width:100%;
 	}
 	#SildeContainer {
 		width:90%;
 	}
 	.mainTxt_inside {
     position:relative;
-	width:60%;
+	width:100%;
 	margin:auto;
 	border:none;
 	margin-top:5%;
@@ -174,7 +174,7 @@ li.cbp-hropen a,
 	padding:0;
 	position:relative; 
 	text-align:center;
-	width:70%; 
+	width:100%; 
     margin: auto;
 	font-size:150%;
 	border-bottom:#9f8462 1px solid; 
@@ -222,7 +222,7 @@ li.cbp-hropen a,
 		padding-top: 0.6em;
 	}
 	#mainTxt {
-		width:70%;
+		width:100%;
 	}
 	#SildeContainer {
 		width:90%;
@@ -239,7 +239,7 @@ li.cbp-hropen a,
 
 	}
 	#mainTxt {
-		width:70%;
+		width:100%;
 	}
 	#SildeContainer {
 		width:90%;
